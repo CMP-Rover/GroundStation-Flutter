@@ -15,6 +15,7 @@ sensorsWss.on("connection", function connection(ws) {
         sensorsWss.clients.forEach(function each(client) {
             if (client !== ws && client.readyState == WebSocket.OPEN)
             {
+                ws.send(message);
                 client.send(message);
             }
         });
