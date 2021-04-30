@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const socket = new WebSocket('ws://localhost:3000/sensors');
+const socket = new WebSocket('ws://localhost:3000/control');
 
 // Connection opened
 socket.addEventListener('open', function (event) {
@@ -15,7 +15,7 @@ const sendMessage = (message) => {
     socket.send(message);
 }
 
-const port = 8000;
+const port = 9000;
 const express = require('express');
 const app = express();
 
