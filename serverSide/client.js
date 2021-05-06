@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const socket = new WebSocket('ws://gentle-retreat-31408.herokuapp.com/sensors');
+const socket = new WebSocket('wss://gentle-retreat-31408.herokuapp.com/sensors');
 
 // Connection opened
 socket.addEventListener('open', function (event) {

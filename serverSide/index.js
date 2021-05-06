@@ -55,6 +55,7 @@ function serverSockets(sockets)
     });
 }
 
+
 let sensors = new Map();
 sensors.set("tempreture", "/tempreture");
 sensors.set("pressure", "/pressure");
@@ -64,5 +65,5 @@ sensors.set("gas_emission", "/gas_emission");
 sockets = getSockets(sensors);
 createWebSocketConnection(sockets);
 app.get('/', (req, res) => res.send('Hello World!'))
-server.listen(port, () => console.log(`Lisening on port : ` + port));
+server.listen(process.env.PORT, () => console.log(`Lisening on port : ` + port));
 serverSockets(sockets);
