@@ -1,8 +1,9 @@
+import 'package:cmp_rover/demo_widgets/ControlPadDemo.dart';
 import 'package:cmp_rover/demo_widgets/DemoSensors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(SensorsHome());
+  runApp(ControlPadDemo());
 }
 
 class MyApp extends StatelessWidget {
