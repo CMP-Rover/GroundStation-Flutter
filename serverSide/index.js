@@ -66,5 +66,5 @@ sensors.set("movement", "/movement");
 sockets = getSockets(sensors);
 createWebSocketConnection(sockets);
 app.get('/', (req, res) => res.send('Hello World!'))
-server.listen(process.env.PORT, () => console.log(`Lisening on port : ` + port));
+server.listen(3000, () => console.log(`Lisening on port : ` + port));
 serverSockets(sockets);
