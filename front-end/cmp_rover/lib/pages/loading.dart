@@ -18,6 +18,7 @@ class _LoadingState extends State<Loading> {
 
 
     super.initState();
+
     SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom],);
 
     //print('initState function ran');

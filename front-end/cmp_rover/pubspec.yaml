@@ -32,7 +32,7 @@ dependencies:
   curved_navigation_bar:
     path: ./curved_navigation_bar/
 
-
+  control_button: ^0.0.2
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -74,6 +74,7 @@ flutter:
     - assets/sensor_s.png
     - assets/camera.png
     - assets/control.png
+    - assets/arm.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

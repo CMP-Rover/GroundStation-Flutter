@@ -6,9 +6,18 @@ import 'package:cmp_rover/pages/mainmenu.dart';
 import 'package:cmp_rover/pages/sensordetails.dart';
 import 'package:cmp_rover/pages/sensorreadings.dart';
 import 'package:cmp_rover/pages/loading.dart';
-void main() {
+import 'package:cmp_rover/pages/robotarm_cam_map.dart';
+import 'package:flutter/services.dart';
+import 'package:cmp_rover/pages/options.dart';
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([ DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown]);
+
   Paint.enableDithering = true;
-  runApp(
+
+
+  return runApp(
       MaterialApp(
 
         initialRoute: '/',
@@ -16,7 +25,9 @@ void main() {
           '/':(context)=>Loading(),
           '/home':(context)=>MainMenu(),
           '/sensordetails':(context)=>SensorDetail(),
-          '/sensorreadings':(context)=>SensorReading(),
+          '/sensorreadings':(context)=>Options(index: 1),
+          '/robotarm':(context)=>Options(index: 0),
+
         },
       )
   );

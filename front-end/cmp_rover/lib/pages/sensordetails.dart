@@ -88,15 +88,15 @@ class _Circular_arcState extends State<Circular_arc> with TickerProviderStateMix
       bottomNavigationBar: CurvedNavigationBar(
         color: Color(0xff26282B),
         buttonBackgroundColor: Colors.blue,
-        index: 1,
+        index: 2,
         height: 75.0,
         backgroundColor: Colors.blueAccent,
         items: <Widget>[
-          Image(image: AssetImage('assets/camera.png'),height: 30.0,width: 30.0,),
-          Image(image: AssetImage('assets/control.png'),height: 30.0,width: 30.0,),
-          Image(image: AssetImage('assets/sensor_s.png'),height: 30.0,width: 30.0,),
-          Image(image: AssetImage('assets/map.png'),height: 30.0,width: 30.0,),
-          Image(image: AssetImage('assets/about.png'),height: 30.0,width: 30.0,),
+          Icon(Icons.camera_alt,size: 30.0,color: Colors.blueAccent,),
+          Icon(Icons.videogame_asset_rounded,size: 30.0,color: Colors.blueAccent,),
+          Icon(Icons.network_check_rounded,color: Colors.white,size: 30.0,),
+          Icon(Icons.location_on, size: 30.0,color: Colors.blueAccent,),
+          Icon(Icons.info_outlined,size: 30.0,color: Colors.blueAccent,),
         ],
         onTap: (index) {
           //Handle button tap

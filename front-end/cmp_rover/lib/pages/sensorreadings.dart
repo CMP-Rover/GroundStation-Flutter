@@ -20,25 +20,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
-        bottomNavigationBar: CurvedNavigationBar(
-          color: Color(0xff26282B),
-          buttonBackgroundColor: Colors.blue,
-          index: 2,
-          height: 75.0,
-          backgroundColor: Colors.blueAccent,
-          items: <Widget>[
-          Image(image: AssetImage('assets/camera.png'),height: 30.0,width: 30.0,),
-            Image(image: AssetImage('assets/control.png'),height: 30.0,width: 30.0,),
-            Image(image: AssetImage('assets/sensor_s.png'),height: 30.0,width: 30.0,),
-            Image(image: AssetImage('assets/map.png'),height: 30.0,width: 30.0,),
-            Image(image: AssetImage('assets/about.png'),height: 30.0,width: 30.0,),
-          ],
-          onTap: (index) {
-            //Handle button tap
-          },
-        ),
-        body: Container(
+    return  Container(
           color: Color(0xff2B3134),
 
           child:  SafeArea(
@@ -136,8 +118,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ]
             ),
-          ),)
-    );
+          ),);
   }
 }
 

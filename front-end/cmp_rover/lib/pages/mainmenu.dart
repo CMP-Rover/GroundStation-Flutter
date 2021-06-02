@@ -12,9 +12,25 @@ import 'dart:ui' as ui;
 //Add this CustomPaint widget to the Widget Tree
 
 
-class MainMenu extends StatelessWidget {
+class MainMenu extends StatefulWidget {
 
 
+  @override
+  _MainMenuState createState() => _MainMenuState();
+
+}
+
+class _MainMenuState extends State<MainMenu> {
+  void initState() {
+    // TODO: implement initState
+
+
+    super.initState();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+
+  }
   @override
   Widget build(BuildContext context) {
     return HomePage();
@@ -312,6 +328,11 @@ class OptionCard extends StatelessWidget {
           onTap: (){
             if(title==0)
               Navigator.pushNamed(context, '/sensorreadings');
+            else if(title==1)
+              {
+
+                Navigator.pushNamed(context, '/robotarm');
+              }
           },
           borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(50),
