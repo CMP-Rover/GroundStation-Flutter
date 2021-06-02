@@ -1,4 +1,3 @@
-// @dart=2.9
 import 'package:flutter/material.dart';
 import 'package:control_pad/control_pad.dart';
 import 'package:web_socket_channel/io.dart';

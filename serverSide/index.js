@@ -61,9 +61,10 @@ sensors.set("tempreture", "/tempreture");
 sensors.set("pressure", "/pressure");
 sensors.set("relative_humidity", "/relative_humidity");
 sensors.set("gas_emission", "/gas_emission");
+sensors.set("movement", "/movement");
 
 sockets = getSockets(sensors);
 createWebSocketConnection(sockets);
 app.get('/', (req, res) => res.send('Hello World!'))
-server.listen(process.env.PORT, () => console.log(`Lisening on port : ` + port));
+server.listen(3000, () => console.log(`Lisening on port : ` + port));
 serverSockets(sockets);
