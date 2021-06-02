@@ -85,23 +85,7 @@ class _Circular_arcState extends State<Circular_arc> with TickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: CurvedNavigationBar(
-        color: Color(0xff26282B),
-        buttonBackgroundColor: Colors.blue,
-        index: 2,
-        height: 75.0,
-        backgroundColor: Colors.blueAccent,
-        items: <Widget>[
-          Icon(Icons.camera_alt,size: 30.0,color: Colors.blueAccent,),
-          Icon(Icons.videogame_asset_rounded,size: 30.0,color: Colors.blueAccent,),
-          Icon(Icons.network_check_rounded,color: Colors.white,size: 30.0,),
-          Icon(Icons.location_on, size: 30.0,color: Colors.blueAccent,),
-          Icon(Icons.info_outlined,size: 30.0,color: Colors.blueAccent,),
-        ],
-        onTap: (index) {
-          //Handle button tap
-        },
-      ),
+
       backgroundColor: Color(0xff2B3134),
       body: SafeArea(
         child: Container(
@@ -151,12 +135,12 @@ class _Circular_arcState extends State<Circular_arc> with TickerProviderStateMix
                   )),
               Positioned(
                 left:(MediaQuery.of(context).size.width-220)/2,
-                top:155,
+                top:(155/821.81)*MediaQuery.of(context).size.height,
                 child: CustomPaint(
 
                   child: Container(
-                    height: 220.0,
-                    width: 220.0,
+                    height: (220.0/821.81)*MediaQuery.of(context).size.height,
+                    width: (220.0/821.81)*MediaQuery.of(context).size.height,
                     padding: EdgeInsets.symmetric(vertical: 40.0),
                     decoration: BoxDecoration(
                         gradient: LinearGradient(colors: <Color>[
@@ -217,19 +201,19 @@ class _Circular_arcState extends State<Circular_arc> with TickerProviderStateMix
                 ),
               ),
               Positioned(
-                  left:(MediaQuery.of(context).size.width-300)/2,
-                  top:118,
+                  left:(MediaQuery.of(context).size.width-290)/2,
+                  top:(130/821.81)*MediaQuery.of(context).size.height,
                   child: RotationTransition(
                     turns: animation,
-                    child: Image(image:AssetImage('assets/circle2.png'),height: 300.0,
-                      width:300.0,),
+                    child: Image(image:AssetImage('assets/circle2.png'),height: 290.0,
+                      width:290.0,),
                   )),
               Positioned(
-                top: MediaQuery.of(context).size.height-(125+260) ,
+                bottom: (70/821.81)*MediaQuery.of(context).size.height,
                 left:(MediaQuery.of(context).size.width-((280/375)*MediaQuery.of(context).size.width))/2,
                 child: Container(
                     width: (280/375)*MediaQuery.of(context).size.width,
-                    height: (240/812.0)*MediaQuery.of(context).size.height,
+                    height: (280/812.0)*MediaQuery.of(context).size.height,
                     padding: EdgeInsets.all(10.0),
                     decoration: BoxDecoration(
 

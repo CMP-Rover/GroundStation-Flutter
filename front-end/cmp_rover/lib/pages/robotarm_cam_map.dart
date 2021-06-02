@@ -6,6 +6,8 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:clay_containers/clay_containers.dart';
 import 'package:control_pad/control_pad.dart';
 import 'package:control_button/control_button.dart';
+import 'package:slider_button/slider_button.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -211,7 +213,7 @@ class _Robot_Arm extends State<Robot_Arm> {
             ,Positioned( bottom: (270/392.72)*MediaQuery.of(context).size.width,right: (60/821.82)*MediaQuery.of(context).size.height, child:Container( child:RaisedButton(onPressed: (){},child: Icon(Icons.arrow_forward,color: Colors.blueAccent,),color: Color(0xff41474A))),  )
             ,Positioned( bottom: (270/392.72)*MediaQuery.of(context).size.width,right:  (180/821.82)*MediaQuery.of(context).size.height, child:Container( child:RaisedButton(onPressed: (){},child: Icon(Icons.arrow_back,color: Colors.blueAccent,),color:  Color(0xff41474A))), ),
             Positioned( bottom: (30/392.72)*MediaQuery.of(context).size.width,left:  (60/821.82)*MediaQuery.of(context).size.height, child:Container( child:JoystickView(size: 150,showArrows: false,)), ),
-            Positioned(top:30,right:  (210/821.82)*MediaQuery.of(context).size.height,child: Image(image: AssetImage('assets/arm.png'),height: 420,width: 420,)) ,
+            Positioned(top:(30/392.72)*MediaQuery.of(context).size.width,right:  (190/821.82)*MediaQuery.of(context).size.height,child: Image(image: AssetImage('assets/arm.png'),height: (420/392.72)*MediaQuery.of(context).size.width,width: (420/821.82)*MediaQuery.of(context).size.height,)) ,
 
 
 
@@ -243,198 +245,65 @@ class _Camera_View extends State<Camera_View> {
 
 
 
-  //////////////////////////////////////////////////////////////////////bottom bar///////////////////////////////
-
-  Widget Nav_Bar2()
-
-
-  {
-    return Positioned(right: 0,top:10,child: Container(width: 70,height: 500,decoration: BoxDecoration(boxShadow: [BoxShadow(color: Color(0xff26282B),blurRadius: 5,)]),));
-
-
-
-  }
-
-  Widget bottom_bar_cemera()
-
-
-  {
-    final Size size = MediaQuery.of(context).size;
-
-    return Container (
-
-
-
-
-
-      child:Stack(
-
-
-
-        children: [
-
-
-
-
-
-          Positioned(
-
-            bottom: 0,
-            left: 0,
-
-            child: Container(
-              width: size.width,
-              height: 80,
-              child: Stack(
-                children: [
-                  CustomPaint(
-                    size: Size(size.width, 80),
-                    painter: BNBCustomPointer(),
-                  ),
-                  Center(
-                    heightFactor: 0.6,
-                    child: FloatingActionButton(
-                      onPressed: () {},
-                      backgroundColor: Colors.blueAccent,
-                      child: Icon(Icons.photo_camera_outlined ),
-                      elevation: 0.1,
-                    ),
-                  ),
-                  Container(
-                    width: size.width ,
-                    height: 80,child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      IconButton(icon: Icon(Icons.home,color: Colors.blueAccent,), onPressed: (){}),
-                      IconButton(icon: Icon(Icons.settings_input_component,color: Colors.blueAccent,), onPressed: (){}),
-                      Container(width: size.width*0.20,),
-                      IconButton(icon: Icon(Icons.games_sharp,color: Colors.blueAccent,), onPressed: (){Navigator.pushNamed(context, '/RobotArm');}),
-                      IconButton(icon: Icon(Icons.map_sharp,color: Colors.blueAccent,), onPressed: (){Navigator.pushNamed(context, '/MapView');}),
-
-                    ],
-                  ),
-
-                  ),
-
-                ],
-              ),
-            ),
-
-          )
-
-        ],
-
-
-      ),
-
-    );
-
-
-  }
-  Widget nav_bar_cemera()
-
-
-  {
-    final Size size = MediaQuery.of(context).size;
-
-    return Container (
-
-
-
-
-
-      child:Stack(
-
-
-
-        children: [
-
-
-
-
-
-          Positioned(
-
-            bottom: 0,
-            left: 0,
-
-            child: Container(
-              color: Colors.black,
-              width: size.width,
-              height: 40,
-              child: Stack(
-                children: [
-
-                  Center(
-                    heightFactor: 1.5,
-                    child: FloatingActionButton(
-                      onPressed: () {},
-                      backgroundColor: Colors.blueAccent,
-                      child: Icon(Icons.photo_camera_outlined ),
-                      elevation: 0.1,
-                    ),
-                  ),
-                  Container(
-                    width: size.width ,
-                    height: 80,child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      IconButton(icon: Icon(Icons.home,color: Colors.blueAccent,), onPressed: (){}),
-                      IconButton(icon: Icon(Icons.settings_input_component,color: Colors.blueAccent,), onPressed: (){}),
-                      Container(width: size.width*0.20,),
-                      IconButton(icon: Icon(Icons.games_sharp,color: Colors.blueAccent,), onPressed: (){Navigator.pushNamed(context, '/RobotArm');}),
-                      IconButton(icon: Icon(Icons.map_sharp,color: Colors.blueAccent,), onPressed: (){Navigator.pushNamed(context, '/MapView');}),
-
-                    ],
-                  ),
-
-                  ),
-
-                ],
-              ),
-            ),
-
-          )
-
-        ],
-
-
-      ),
-
-    );
-
-
-  }
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/////portier//////////
-
-  Widget portier() {
-
-    return Container(child: Stack(children: [ bottom_bar_cemera(),Positioned(bottom: 500,right: 230,child:  RaisedButton(padding: EdgeInsets.symmetric(vertical: 16,horizontal: 60),shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30))),onPressed:(){Navigator.pushNamed(context, '/MapView');},color: Colors.blueAccent,child: Text("MAP",style: TextStyle(color: Colors.white,fontSize: 23),),),),
-      Positioned(bottom: 500,right: 230,child: FloatingActionButton(heroTag: 'next2',onPressed: (){},child: Icon(Icons.photo_camera,color: Colors.blueAccent,),backgroundColor: Color(0xff41474A)),)]));
-
-
-
-  }
-
   Widget landscape() {
 
-    return Container(child: Stack(children: [Nav_Bar2(),
+    return RotatedBox(
+      quarterTurns: 1,
+      child: Container(child: Stack(children: [
 
-      Positioned(top:20,right:670,child: IconButton(icon: Icon(Icons.arrow_back_ios,color: Colors.blue),onPressed:(){Navigator.pushNamed(context, '/home');} ,),),
-      Positioned(bottom:300,right:5,child: Container(child: IconButton(icon: Icon(Icons.map_sharp,color: Colors.blueAccent,),onPressed: (){Navigator.pushNamed(context, '/MapView');},),),),Positioned(bottom:230,right:5,child: Container(child: IconButton(icon: Icon(Icons.games,color: Colors.blueAccent,),onPressed: (){Navigator.pushNamed(context, '/RobotArm');},),),),
-      Positioned(bottom:95,right:5,child:  Container(child: IconButton(icon: Icon(Icons.camera,color: Colors.blueAccent,),onPressed: (){},),)),
-      Positioned(top:35,right:640,child: Container(child: Text("BACK",style: TextStyle(color: Colors.white,decoration: TextDecoration.underline),),),),
-      Positioned(bottom:25,right:5,child:Container(child: IconButton(icon: Icon(Icons.home,color: Colors.blueAccent,),onPressed: (){},),)),
-      Positioned(bottom:150,right:20,child:Container(child: FloatingActionButton(heroTag: 'next7',onPressed: (){},child: Icon(Icons.photo_camera,color: Colors.white,),backgroundColor: Colors.blueAccent ),)),
+        Positioned(top:(20/392.72)*MediaQuery.of(context).size.width,left:(50/821.81)*MediaQuery.of(context).size.height,child: FlatButton.icon(
 
-      Positioned(bottom: 30,right: 270,child:  RaisedButton(padding: EdgeInsets.symmetric(vertical: 16,horizontal: 60),shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30))),onPressed:(){},color: Colors.blueAccent,child: Text("CAMERA",style: TextStyle(color: Colors.white,fontSize: 23),),)),
+          onPressed: (){
+            Navigator.pop(context);
+          }, icon: Icon(Icons.backspace_rounded,color: Colors.blue,size: 16.0,),
+          label: Text('BACK',style: TextStyle(decoration: TextDecoration.underline,color: Colors.grey,fontFamily: 'BNK',fontSize: 16.0),textAlign: TextAlign.left,),
+        ),),
+        Positioned(bottom: (30/392.72)*MediaQuery.of(context).size.width,left: (MediaQuery.of(context).size.height-180)/2,child: SliderButton(
+          action: () {
+            ///Do something here OnSlide
+            Navigator.popAndPushNamed(context, '/mapview');
+          },
+          ///Put label over here
+          label: Text(
+            "Camera",
+            style: TextStyle(
+                color: Color(0xff4a4a4a),
+                fontWeight: FontWeight.bold,
+                fontFamily: 'BNK',
+                fontSize: 20),
+          ),
+          icon: Center(
+              child: Icon(
+                Icons.map,
+                color: Colors.white,
+                size: 30.0,
+                semanticLabel: 'Text to announce in accessibility modes',
+              )),
 
-      Positioned(bottom: 32,right: 430,child: FloatingActionButton(heroTag: 'next2',onPressed: (){Navigator.pushNamed(context, '/MapView');},child: Icon(Icons.map_sharp,color: Colors.white,),backgroundColor: Color(0xff41474A)),)
+          //Put BoxShadow here
+          boxShadow: BoxShadow(
+            color: Colors.black,
+            blurRadius: 4,
+          ),
 
-    ]));
+          //Adjust effects such as shimmer and flag vibration here
+          // shimmer: true,
+          // vibrationFlag: true,
+
+          ///Change All the color and size from here.
+          width: 180,
+          radius: 50,
+          buttonColor: Color(0xff2B3134),
+          backgroundColor: Colors.blueAccent,
+          highlightedColor: Colors.grey,
+          baseColor: Colors.white,
+        )
+        ),
+
+
+
+      ])),
+    );
 
 
 
@@ -451,33 +320,7 @@ class _Camera_View extends State<Camera_View> {
   /////////////////////////////
 
   Widget build(BuildContext context) {
-
-
-    return Scaffold(
-      /*appBar: AppBar(
-          backgroundColor: Color(0xff41474A),
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back_ios,
-              color: Colors.blue,
-            ),
-            onPressed: (){Navigator.pushNamed(context, '/home');} ,
-          ),
-
-          centerTitle: true,
-          elevation: 0,
-        ),*/
-        backgroundColor: Color(0xff41474A),
-        body:OrientationBuilder(
-          builder: (context, orientation) {
-            if (orientation == Orientation.portrait) {
-              return portier();
-            } else {
-              return landscape();
-            }
-          },
-        )
-    );
+    return landscape();
   }
 
 
@@ -501,198 +344,64 @@ class _Map_View extends State<Map_View> {
   @override
 
 
-  //////////////////////////////////////////////////////////////////////bottom bar///////////////////////////////
-  Widget bottom_bar_Map()
 
-
-  {
-    final Size size = MediaQuery.of(context).size;
-
-    return Container (
-
-
-
-
-
-      child:Stack(
-
-
-
-        children: [
-
-
-
-
-
-          Positioned(
-
-            bottom: 0,
-            left: 0,
-
-            child: Container(
-              width: size.width,
-              height: 80,
-              child: Stack(
-                children: [
-                  CustomPaint(
-                    size: Size(size.width, 80),
-                    painter: BNBCustomPointer(),
-                  ),
-                  Center(
-                    heightFactor: 0.6,
-                    child: FloatingActionButton(
-                      onPressed: () {},
-                      backgroundColor: Colors.blueAccent,
-                      child: Icon(Icons.map_sharp ),
-                      elevation: 0.1,
-                    ),
-                  ),
-                  Container(
-                    width: size.width ,
-                    height: 80,child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      IconButton(icon: Icon(Icons.home,color: Colors.blueAccent,), onPressed: (){}),
-                      IconButton(icon: Icon(Icons.settings_input_component,color: Colors.blueAccent,), onPressed: (){}),
-                      Container(width: size.width*0.20,),
-                      IconButton(icon: Icon(Icons.games_sharp,color: Colors.blueAccent,), onPressed: (){Navigator.pushNamed(context, '/RobotArm');}),
-                      IconButton(icon: Icon(Icons.photo_camera_outlined ,color: Colors.blueAccent,), onPressed: (){Navigator.pushNamed(context, '/CemeraView');}),
-
-                    ],
-                  ),
-
-                  ),
-
-                ],
-              ),
-            ),
-
-          )
-
-        ],
-
-
-      ),
-
-    );
-
-
-  }
-  Widget Nav_Bar2()
-
-
-  {
-    return Positioned(right: 0,top:10,child: Container(width: 70,height: 500,decoration: BoxDecoration(boxShadow: [BoxShadow(color: Color(0xff26282B),blurRadius: 5,)]),));
-
-
-
-  }
-
-  /////////////////////////////////////////////////////////////////////////////////////////////////////////
-  Widget nav_bar_Map()
-
-
-  {
-    final Size size = MediaQuery.of(context).size;
-
-    return Container (
-
-
-
-
-
-      child:Stack(
-
-
-
-        children: [
-
-
-
-
-
-          Positioned(
-
-            bottom: 0,
-            left: 0,
-
-            child: Container(
-              color: Colors.black,
-              width: size.width,
-              height: 40,
-              child: Stack(
-                children: [
-
-                  Center(
-                    heightFactor: 1.5,
-                    child: FloatingActionButton(
-                      onPressed: () {},
-                      backgroundColor: Colors.blueAccent,
-                      child: Icon(Icons.map_sharp ),
-                      elevation: 0.1,
-                    ),
-                  ),
-                  Container(
-                    width: size.width ,
-                    height: 80,child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      IconButton(icon: Icon(Icons.home,color: Colors.blueAccent,), onPressed: (){}),
-                      IconButton(icon: Icon(Icons.settings_input_component,color: Colors.blueAccent,), onPressed: (){}),
-                      Container(width: size.width*0.20,),
-                      IconButton(icon: Icon(Icons.games_sharp,color: Colors.blueAccent,), onPressed: (){Navigator.pushNamed(context, '/RobotArm');}),
-                      IconButton(icon: Icon(Icons.photo_camera_outlined ,color: Colors.blueAccent,), onPressed: (){Navigator.pushNamed(context, '/CemeraView');}),
-
-                    ],
-                  ),
-
-                  ),
-
-                ],
-              ),
-            ),
-
-          )
-
-        ],
-
-
-      ),
-
-    );
-
-
-  }
-/////portier//////////
-
-  Widget portier() {
-
-    return Container(child: Stack(children: [ bottom_bar_Map(),Positioned(bottom: 500,right: 230,child:  RaisedButton(padding: EdgeInsets.symmetric(vertical: 16,horizontal: 60),shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30))),onPressed:(){Navigator.pushNamed(context, '/MapView');},color: Colors.blueAccent,child: Text("CAMERA",style: TextStyle(color: Colors.white,fontSize: 23),),),),
-      Positioned(bottom: 500,right: 230,child: FloatingActionButton(heroTag: 'next2',onPressed: (){},child: Icon(Icons.map_sharp,color: Colors.blueAccent,),backgroundColor: Color(0xff41474A)),)]));
-
-
-
-
-
-
-
-
-  }
   Widget landscape() {
 
-    return Container(child: Stack(children: [Nav_Bar2(),
+    return RotatedBox(
+      quarterTurns: 1,
+      child: Container(child: Stack(children: [
 
+        Positioned(top:(20/392.72)*MediaQuery.of(context).size.width,left:(50/821.81)*MediaQuery.of(context).size.height,child: FlatButton.icon(
 
-      Positioned(bottom:200,right:20,child: Container(child: FloatingActionButton(onPressed: (){},child: Icon(Icons.map_sharp,color: Colors.white,),backgroundColor: Colors.blueAccent,),),)
-      ,Positioned(top:35,right:640,child: Container(child: Text("BACK",style: TextStyle(color: Colors.white,decoration: TextDecoration.underline),),),)
-      ,Positioned(top:20,right:670,child: IconButton(icon: Icon(Icons.arrow_back_ios,color: Colors.blue),onPressed:(){Navigator.pushNamed(context, '/home');} ,),)
-      , Positioned(bottom: 30,right: 270,child:  RaisedButton(padding: EdgeInsets.symmetric(vertical: 16,horizontal: 60),shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30))),onPressed:(){},color: Colors.blueAccent,child: Text("MAP",style: TextStyle(color: Colors.white,fontSize: 23),),),),
-      Positioned(bottom: 32,right: 260,child: FloatingActionButton(heroTag: 'next8',onPressed: (){Navigator.pushNamed(context, '/CemeraView');},child: Icon(Icons.photo_camera,color: Colors.white,),backgroundColor: Color(0xff41474A)),),
-      Positioned(bottom:300,right:5,child:  Container(child: IconButton(icon: Icon(Icons.games,color: Colors.blueAccent,),onPressed: (){Navigator.pushNamed(context, '/RobotArm');},),)),
-      Positioned(bottom:95,right:5,child:  Container(child: IconButton(icon: Icon(Icons.camera,color: Colors.blueAccent,),onPressed: (){},),)),
-      Positioned(bottom:25,right:5,child:  Container(child: IconButton(icon: Icon(Icons.home,color: Colors.blueAccent,),onPressed: (){},),))
+          onPressed: (){
+            Navigator.pop(context);
+          }, icon: Icon(Icons.backspace_rounded,color: Colors.blue,size: 16.0,),
+          label: Text('BACK',style: TextStyle(decoration: TextDecoration.underline,color: Colors.grey,fontFamily: 'BNK',fontSize: 16.0),textAlign: TextAlign.left,),
+        ),),
 
-    ]));
+        Positioned(bottom: (30/392.72)*MediaQuery.of(context).size.width,left: (MediaQuery.of(context).size.height-180)/2,child:SliderButton(
+            action: () {
+              ///Do something here OnSlide
+              Navigator.popAndPushNamed(context, '/camview');
+            },
+            ///Put label over here
+            label: Text(
+              "MAP",
+              style: TextStyle(
+                  color: Color(0xff4a4a4a),
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'BNK',
+                  fontSize:20),
+            ),
+            icon: Center(
+                child: Icon(
+                  Icons.camera_alt,
+                  color: Colors.white,
+                  size: 30.0,
+                  semanticLabel: 'Text to announce in accessibility modes',
+                )),
+
+            //Put BoxShadow here
+            boxShadow: BoxShadow(
+              color: Colors.black,
+              blurRadius: 4,
+            ),
+
+            //Adjust effects such as shimmer and flag vibration here
+            // shimmer: true,
+            // vibrationFlag: true,
+
+            ///Change All the color and size from here.
+            width: 180,
+            radius: 50,
+            buttonColor: Color(0xff2B3134),
+            backgroundColor: Colors.blueAccent,
+            highlightedColor: Colors.grey,
+            baseColor: Colors.white,
+          ))
+
+      ])),
+    );
 
 
 
@@ -703,33 +412,7 @@ class _Map_View extends State<Map_View> {
   /////////////////////////////
 
   Widget build(BuildContext context) {
-
-
-    return Scaffold(
-      /* appBar: AppBar(
-          backgroundColor: Color(0xff41474A),
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back_ios,
-              color: Colors.blue,
-            ),
-            onPressed: (){Navigator.pushNamed(context, '/home');} ,
-          ),
-
-          centerTitle: true,
-          elevation: 0,
-        ),*/
-        backgroundColor: Color(0xff41474A),
-        body:OrientationBuilder(
-          builder: (context, orientation) {
-            if (orientation == Orientation.portrait) {
-              return portier();
-            } else {
-              return landscape();
-            }
-          },
-        )
-    );
+    return landscape();
   }
 
 

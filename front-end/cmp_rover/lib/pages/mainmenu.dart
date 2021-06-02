@@ -328,11 +328,21 @@ class OptionCard extends StatelessWidget {
           onTap: (){
             if(title==0)
               Navigator.pushNamed(context, '/sensorreadings');
-            else if(title==1)
+            else if(title==1||title==2)
               {
 
                 Navigator.pushNamed(context, '/robotarm');
               }
+            else if(title==3)
+            {
+
+              Navigator.pushNamed(context, '/camview');
+            }
+            else if(title==4)
+            {
+
+              Navigator.pushNamed(context, '/camview');
+            }
           },
           borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(50),

@@ -25,8 +25,11 @@ Future<void> main() async {
           '/':(context)=>Loading(),
           '/home':(context)=>MainMenu(),
           '/sensordetails':(context)=>SensorDetail(),
-          '/sensorreadings':(context)=>Options(index: 1),
-          '/robotarm':(context)=>Options(index: 0),
+          '/sensorreadings':(context)=>Options(index: 2),
+          '/robotarm':(context)=>Options(index: 1),
+          '/camview':(context)=>Options(index: 0),
+          '/mapview':(context)=>Options(index: 3),
+
 
         },
       )
