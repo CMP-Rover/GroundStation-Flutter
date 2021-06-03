@@ -1,119 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3fe3b011-a504-48ec-adfd-12ae7b7b43ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/BNKGOTHL.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/Swiss721BoldOutlineBT.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/bmp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/circle2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/contact.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/dht.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/gps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/mq2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/mq7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/assets/robot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/.github/CODEOWNERS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/.github/FUNDING.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/.metadata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/analysis_options.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/example/main.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/lib/control_pad.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/lib/models/gestures.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/lib/models/pad_button_item.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/lib/views/circle_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/lib/views/joystick_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/lib/views/pad_button_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/control_pad-1.1.1+1/test/control_pad_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/android/local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/kotlin/com/example/example/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/android/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Flutter/Debug.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Flutter/Release.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/AppDelegate.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/ios/Runner/Runner-Bridging-Header.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/lib/main.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/example/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/lib/curved_navigation_bar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/lib/src/nav_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/lib/src/nav_custom_painter.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/pubspec.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/curved_navigation_bar/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/loading.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/mainmenu.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/sensordetails.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/sensorreadings.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/lib/demo_widgets/ControlPadDemo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/demo_widgets/ControlPadDemo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GroundStation-Flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GroundStation-Flutter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/sensorreadings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/sensorreadings.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverSide/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/serverSide/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +31,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1tMUwZt4yS3CgxMfWm8ZLSCzupw" />
@@ -132,7 +47,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+      <option name="additionalArgs" value="--no-sound-null-safety" />
+      <option name="filePath" value="$PROJECT_DIR$/front-end/cmp_rover/lib/main.dart" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -146,5 +71,67 @@
       <updated>1622578690170</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622739856716">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1622739856716" />
+    <state x="498" y="207" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1622738332637">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="498" y="207" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1622738332637" />
+    <state x="100" y="100" width="1336" height="634" key="AVDManager" timestamp="1622737614005">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="100" y="100" width="1336" height="634" key="AVDManager/0.0.1536.834@0.0.1536.834" timestamp="1622737614005" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1622737903545">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1622737903545" />
+    <state width="1476" height="203" key="GridCell.Tab.0.bottom" timestamp="1622755009581">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1476" height="203" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1622755009581" />
+    <state width="1476" height="203" key="GridCell.Tab.0.center" timestamp="1622755009581">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1476" height="203" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1622755009581" />
+    <state width="1476" height="203" key="GridCell.Tab.0.left" timestamp="1622755009581">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1476" height="203" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1622755009581" />
+    <state width="1476" height="203" key="GridCell.Tab.0.right" timestamp="1622755009581">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1476" height="203" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1622755009581" />
+    <state x="439" y="122" key="NewModule_or_Project.wizard" timestamp="1622737961504">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="439" y="122" key="NewModule_or_Project.wizard/0.0.1536.834@0.0.1536.834" timestamp="1622737961504" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1622737126306">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1622737126306" />
+    <state x="444" y="101" key="git4idea.merge.GitPullDialog" timestamp="1622676856696">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="444" y="101" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1622676856696" />
+    <state x="426" y="74" width="672" height="676" key="search.everywhere.popup" timestamp="1622737121771">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="426" y="74" width="672" height="676" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1622737121771" />
   </component>
 </project>

@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'dart:ui' as ui;
 
+import 'package:web_socket_channel/io.dart';
+import 'package:web_socket_channel/status.dart' as status;
+
 //Add this CustomPaint widget to the Widget Tree
 
 
@@ -123,11 +126,23 @@ class HomePage extends StatelessWidget {
 }
 
 class SensorReadingContainer extends StatelessWidget {
+  final bmpChannel =
+  IOWebSocketChannel.connect("wss://cmp-rover.herokuapp.com/tempreture");
+
+  final mq7Channel =
+  IOWebSocketChannel.connect("wss://cmp-rover.herokuapp.com/pressure");
+
+  final dhtChannel = IOWebSocketChannel.connect(
+      "wss://cmp-rover.herokuapp.com/relative_humidity");
+
+  final mq2Channel =
+  IOWebSocketChannel.connect("wss://cmp-rover.herokuapp.com/gas_emission");
+
   final Color color ;
   final Color shadowcolor;
   final int sensorId; //from 0 =>3, 0 is bmp, 1 is dht , 2 mq2, 3 is mq7
 
-  const SensorReadingContainer({
+  SensorReadingContainer({
     Key? key,
     required this.color
     ,required this.shadowcolor,
@@ -181,8 +196,15 @@ class SensorReadingContainer extends StatelessWidget {
                             fontSize: 40,
                             color: Colors.white,
                             fontFamily:'Raleway',),textAlign: TextAlign.center, ),
-                        SizedBox(height: 10,), Text('2500',
-                            style: TextStyle(fontSize: 28, color: Colors.white70,fontWeight: FontWeight.bold,),textAlign: TextAlign.center ),
+                        SizedBox(height: 10,),
+                        StreamBuilder<dynamic>(
+                            stream: (sensorId==0)?bmpChannel.stream:(sensorId==1)?dhtChannel.stream:(sensorId==2)?mq2Channel.stream:mq7Channel.stream,
+                            builder: (context, snapshot) {
+                              return Text((snapshot.data == null)
+                                  ? 'reading'
+                                  :(snapshot.data == 'Connected Successfully')? '':' Reading = ${snapshot.data}',
+                                  style: TextStyle(fontSize: 28, color: Colors.white70,fontWeight: FontWeight.bold,),textAlign: TextAlign.center );
+                            }),
                       ],
                     )),
                     Expanded(
