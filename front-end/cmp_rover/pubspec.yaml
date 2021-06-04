@@ -23,10 +23,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  web_socket_channel:
-  control_pad: 
+  web_socket_channel: ^2.1.0
+  clay_containers: ^0.3.2
+  carousel_slider: ^3.0.0
+  flutter_spinkit: ^4.1.2
+  control_pad:
+    path: ./control_pad-1.1.1+1/
+  curved_navigation_bar:
+    path: ./curved_navigation_bar/
 
-
+  control_button: ^0.0.2
+  slider_button: ^1.0.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -47,9 +54,28 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/logo.png
+    - assets/robot.png
+    - assets/contact.png
+    - assets/about.png
+    - assets/1.png
+    - assets/2.png
+    - assets/3.png
+    - assets/4.png
+    - assets/5.png
+    - assets/bmp.png
+    - assets/dht.png
+    - assets/gps.png
+    - assets/mq2.png
+    - assets/mq7.png
+    - assets/circle.png
+    - assets/circle2.png
+    - assets/map.png
+    - assets/sensor_s.png
+    - assets/camera.png
+    - assets/control.png
+    - assets/arm.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -62,6 +88,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Swis
+      fonts:
+        - asset: assets/Swiss721BoldOutlineBT.ttf
+    - family: BNK
+      fonts:
+        - asset: assets/BNKGOTHL.TTF
   # fonts:
   #   - family: Schyler
   #     fonts:
