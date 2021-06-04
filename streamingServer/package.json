@@ -1,0 +1,14 @@
+{
+  "name": "streamingserver",
+  "version": "1.0.0",
+  "description": "Streaming Server for CMP Rover",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CMP-Rover Team",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
