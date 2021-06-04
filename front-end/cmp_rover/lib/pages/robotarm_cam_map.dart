@@ -319,7 +319,7 @@ class _Robot_Arm extends State<Robot_Arm> {
                         stream: movement.stream,
                         builder: (context, snapshot) {
                           return JoystickView(
-                            size: 150,
+                            //size: 180,
                             showArrows: false,
                             interval: Duration(seconds: 1),
                             onDirectionChanged: (degrees, distance) {
@@ -329,14 +329,7 @@ class _Robot_Arm extends State<Robot_Arm> {
                           );
                         })),
               ),
-              Positioned(
-                  top: (30 / 392.72) * MediaQuery.of(context).size.width,
-                  right: (190 / 821.82) * MediaQuery.of(context).size.height,
-                  child: Image(
-                    image: AssetImage('assets/arm.png'),
-                    height: (420 / 392.72) * MediaQuery.of(context).size.width,
-                    width: (420 / 821.82) * MediaQuery.of(context).size.height,
-                  )),
+
             ])),
       ),
     );

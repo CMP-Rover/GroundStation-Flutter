@@ -19,14 +19,14 @@ class _LoadingState extends State<Loading> {
 
     super.initState();
 
-    SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom],);
+
 
     //print('initState function ran');
     //Future.delayed(const Duration(seconds: 3), () => "3");
     Timer(
         Duration(seconds: 4),
             () {
-              SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
+
               Navigator.popAndPushNamed(context,'/home')   ;
 
 
@@ -54,7 +54,7 @@ class _LoadingState extends State<Loading> {
             children: [
               Image.asset('assets/logo.png',scale:1.25,),
               SpinKitCircle(
-                color: Colors.white70,
+                color: Colors.white,
                 size: 45.0,
 
               ),
