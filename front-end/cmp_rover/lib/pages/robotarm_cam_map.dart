@@ -6,6 +6,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:clay_containers/clay_containers.dart';
 import 'package:control_pad/control_pad.dart';
 import 'package:control_button/control_button.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:slider_button/slider_button.dart';
 
 void main() {
@@ -339,6 +340,16 @@ class Map_View extends StatefulWidget
 
 
 class _Map_View extends State<Map_View> {
+  static const _initialCameraPosition = CameraPosition(
+      target: LatLng(37.773972,-122.431297),  //put lat and long
+      zoom: 11.5,
+      );
+  late GoogleMapController _googleMapController;
+  @override
+  void dispose() {
+    _googleMapController.dispose();
+    super.dispose();
+  }
 
 
   @override
@@ -412,7 +423,23 @@ class _Map_View extends State<Map_View> {
   /////////////////////////////
 
   Widget build(BuildContext context) {
-    return landscape();
+    //return landscape();
+    return Scaffold(
+      body: GoogleMap(
+        myLocationButtonEnabled: false,
+        zoomControlsEnabled: false,
+        initialCameraPosition: _initialCameraPosition,
+        onMapCreated: (controller) => _googleMapController=controller,
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Theme.of(context).primaryColor,
+        foregroundColor: Colors.black,
+        onPressed: () => _googleMapController.animateCamera(
+            CameraUpdate.newCameraPosition(_initialCameraPosition),
+        ),
+        child: const Icon(Icons.center_focus_strong),
+      ),
+    );
   }
 
 

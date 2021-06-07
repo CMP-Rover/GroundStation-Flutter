@@ -202,7 +202,7 @@ class SensorReadingContainer extends StatelessWidget {
                             builder: (context, snapshot) {
                               return Text((snapshot.data == null)
                                   ? 'reading'
-                                  :(snapshot.data == 'Connected Successfully')? '':' Reading = ${snapshot.data}',
+                                  :(snapshot.data == 'Connected Successfully')? '':'R=${snapshot.data}',
                                   style: TextStyle(fontSize: 28, color: Colors.white70,fontWeight: FontWeight.bold,),textAlign: TextAlign.center );
                             }),
                       ],

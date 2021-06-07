@@ -16,14 +16,23 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe3b011-a504-48ec-adfd-12ae7b7b43ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/GroundStation-Flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GroundStation-Flutter.iml" afterDir="false" />
+    <list default="true" id="3fe3b011-a504-48ec-adfd-12ae7b7b43ea" name="Default Changelist" comment="map added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/robotarm_cam_map.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/robotarm_cam_map.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/sensorreadings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/sensorreadings.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serverSide/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/serverSide/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +79,14 @@
       <option name="presentableId" value="Default" />
       <updated>1622578690170</updated>
     </task>
+    <task id="LOCAL-00001" summary="StreamBuilders added">
+      <created>1622755715027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622755715027</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,18 +94,39 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="StreamBuilders added" />
+    <MESSAGE value="map added" />
+    <option name="LAST_COMMIT_MESSAGE" value="map added" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622739856716">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1622739856716" />
+    <state x="532" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623000319557">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="532" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1623000319557" />
     <state x="498" y="207" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1622738332637">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -101,22 +139,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1622737903545" />
-    <state width="1476" height="203" key="GridCell.Tab.0.bottom" timestamp="1622755009581">
+    <state width="1476" height="201" key="GridCell.Tab.0.bottom" timestamp="1623083208278">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1476" height="203" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1622755009581" />
-    <state width="1476" height="203" key="GridCell.Tab.0.center" timestamp="1622755009581">
+    <state width="1476" height="201" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1623083208278" />
+    <state width="1476" height="201" key="GridCell.Tab.0.center" timestamp="1623083208278">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1476" height="203" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1622755009581" />
-    <state width="1476" height="203" key="GridCell.Tab.0.left" timestamp="1622755009581">
+    <state width="1476" height="201" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1623083208278" />
+    <state width="1476" height="201" key="GridCell.Tab.0.left" timestamp="1623083208278">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1476" height="203" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1622755009581" />
-    <state width="1476" height="203" key="GridCell.Tab.0.right" timestamp="1622755009581">
+    <state width="1476" height="201" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1623083208278" />
+    <state width="1476" height="201" key="GridCell.Tab.0.right" timestamp="1623083208278">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1476" height="203" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1622755009581" />
+    <state width="1476" height="201" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1623083208278" />
     <state x="439" y="122" key="NewModule_or_Project.wizard" timestamp="1622737961504">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -125,6 +163,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1622737126306" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1622755961289">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1622755961289" />
     <state x="444" y="101" key="git4idea.merge.GitPullDialog" timestamp="1622676856696">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
