@@ -132,7 +132,7 @@ class _Robot_Arm extends State<Robot_Arm> {
 
   Widget landscape() {
     String text = '';
-    final movement =
+    var movement =
         IOWebSocketChannel.connect("wss://cmp-rover.herokuapp.com/movement");
     void updateState(String showText) {
       setState(() {
@@ -263,6 +263,57 @@ class _Robot_Arm extends State<Robot_Arm> {
                 ),
               ), //down
               Positioned(
+                bottom: (80 / 392.72) * MediaQuery.of(context).size.width,
+                right: (270 / 821.82) * MediaQuery.of(context).size.height,
+                child: Container(
+                  child: ClayContainer(
+                    color: Color(0xff41474A),
+                    height: 55,
+                    width: 55,
+                    borderRadius: 30,
+                    spread: 1,
+                    curveType: CurveType.none,
+                    child: Center(
+                      child: FlatButton(
+                        onPressed: () {},
+                        height: 55,
+                        child: Icon(
+                          Icons.arrow_forward_rounded,
+                          color: Colors.blueAccent,
+                        ),
+                        shape: CircleBorder(),
+                      ),
+                    ),
+                  ),
+                ),
+              ) //right
+              ,
+              Positioned(
+                bottom: (80 / 392.72) * MediaQuery.of(context).size.width,
+                right: (370 / 821.82) * MediaQuery.of(context).size.height,
+                child: Container(
+                  child: ClayContainer(
+                    color: Color(0xff41474A),
+                    height: 55,
+                    width: 55,
+                    borderRadius: 30,
+                    spread: 1,
+                    curveType: CurveType.none,
+                    child: Center(
+                      child: FlatButton(
+                        onPressed: () {},
+                        height: 55,
+                        child: Icon(
+                          Icons.arrow_back_rounded,
+                          color: Colors.blueAccent,
+                        ),
+                        shape: CircleBorder(),
+                      ),
+                    ),
+                  ),
+                ),
+              ), //left
+              Positioned(
                 bottom: (130 / 392.72) * MediaQuery.of(context).size.width,
                 right: (120 / 821.82) * MediaQuery.of(context).size.height,
                 child: Container(
@@ -293,9 +344,12 @@ class _Robot_Arm extends State<Robot_Arm> {
                 child: Container(
                     child: RaisedButton(
                         onPressed: () {},
-                        child: Icon(
-                          Icons.arrow_forward,
-                          color: Colors.blueAccent,
+                        child: Text(
+                          "Stop",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontFamily: 'BNK'),
                         ),
                         color: Color(0xff41474A))),
               ),
@@ -305,31 +359,82 @@ class _Robot_Arm extends State<Robot_Arm> {
                 child: Container(
                     child: RaisedButton(
                         onPressed: () {},
-                        child: Icon(
-                          Icons.arrow_back,
-                          color: Colors.blueAccent,
+                        child: Text(
+                          "Grip",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontFamily: 'BNK'),
                         ),
                         color: Color(0xff41474A))),
               ),
               Positioned(
                 bottom: (30 / 392.72) * MediaQuery.of(context).size.width,
+                right: (320 / 821.82) * MediaQuery.of(context).size.height,
+                child: Container(
+                  child: ClayContainer(
+                    color: Color(0xff41474A),
+                    height: 55,
+                    width: 55,
+                    borderRadius: 30,
+                    spread: 1,
+                    curveType: CurveType.none,
+                    child: Center(
+                      child: FlatButton(
+                        onPressed: () {},
+                        height: 55,
+                        child: Icon(
+                          Icons.arrow_downward_rounded,
+                          color: Colors.blueAccent,
+                        ),
+                        shape: CircleBorder(),
+                      ),
+                    ),
+                  ),
+                ),
+              ), //down
+              Positioned(
+                bottom: (130 / 392.72) * MediaQuery.of(context).size.width,
+                right: (320 / 821.82) * MediaQuery.of(context).size.height,
+                child: Container(
+                  child: ClayContainer(
+                    color: Color(0xff41474A),
+                    height: 55,
+                    width: 55,
+                    borderRadius: 30,
+                    spread: 1,
+                    curveType: CurveType.none,
+                    child: Center(
+                      child: FlatButton(
+                        onPressed: () {},
+                        height: 55,
+                        child: Icon(
+                          Icons.arrow_upward_outlined,
+                          color: Colors.blueAccent,
+                        ),
+                        shape: CircleBorder(),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: (30 / 392.72) * MediaQuery.of(context).size.width,
                 left: (60 / 821.82) * MediaQuery.of(context).size.height,
                 child: Container(
-                    child: StreamBuilder(
-                        stream: movement.stream,
-                        builder: (context, snapshot) {
-                          return JoystickView(
-                            //size: 180,
-                            showArrows: false,
-                            interval: Duration(seconds: 1),
-                            onDirectionChanged: (degrees, distance) {
-                              movement.sink.add(
-                                  '{"Degree" : ${degrees.toInt()}, "Distance" : ${distance.toStringAsFixed(2)}}');
-                            },
-                          );
-                        })),
+                    child: JoystickView(
+                  //size: 180,
+                  showArrows: false,
+                  interval: Duration(seconds: 1),
+                  onDirectionChanged: (degrees, distance) {
+                    movement.stream.listen((dynamic ms) => {},
+                        onDone: () => movement = IOWebSocketChannel.connect(
+                            "wss://cmp-rover.herokuapp.com/movement"));
+                    movement.sink.add(
+                        '{"Degree" : ${degrees.toInt()}, "Distance" : ${distance.toStringAsFixed(2)}}');
+                  },
+                )),
               ),
-
             ])),
       ),
     );

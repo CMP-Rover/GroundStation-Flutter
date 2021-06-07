@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe3b011-a504-48ec-adfd-12ae7b7b43ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/GroundStation-Flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GroundStation-Flutter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/sensorreadings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/cmp_rover/lib/pages/sensorreadings.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serverSide/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/serverSide/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="3fe3b011-a504-48ec-adfd-12ae7b7b43ea" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,12 +72,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622739856716">

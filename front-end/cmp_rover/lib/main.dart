@@ -1,4 +1,4 @@
-
+// @dart=2.9
 import 'package:cmp_rover/demo_widgets/DemoSensors.dart';
 import 'package:cmp_rover/pages/loading.dart';
 import 'package:flutter/material.dart';
