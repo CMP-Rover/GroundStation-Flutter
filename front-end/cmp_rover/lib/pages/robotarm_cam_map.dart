@@ -140,6 +140,9 @@ class _Robot_Arm extends State<Robot_Arm> {
       });
     }
 
+    final robotic_arm =
+        IOWebSocketChannel.connect("wss://cmp-rover.herokuapp.com/robotic_arm");
+
     double size = MediaQuery.of(context).size.width;
     return SafeArea(
       child: RotatedBox(
@@ -199,7 +202,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                     curveType: CurveType.none,
                     child: Center(
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("p+");
+                        },
                         height: 55,
                         child: Icon(
                           Icons.arrow_forward_rounded,
@@ -225,7 +230,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                     curveType: CurveType.none,
                     child: Center(
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("p-");
+                        },
                         height: 55,
                         child: Icon(
                           Icons.arrow_back_rounded,
@@ -250,7 +257,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                     curveType: CurveType.none,
                     child: Center(
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("z-");
+                        },
                         height: 55,
                         child: Icon(
                           Icons.arrow_downward_rounded,
@@ -275,7 +284,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                     curveType: CurveType.none,
                     child: Center(
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("x+");
+                        },
                         height: 55,
                         child: Icon(
                           Icons.arrow_forward_rounded,
@@ -301,7 +312,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                     curveType: CurveType.none,
                     child: Center(
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("x-");
+                        },
                         height: 55,
                         child: Icon(
                           Icons.arrow_back_rounded,
@@ -326,7 +339,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                     curveType: CurveType.none,
                     child: Center(
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("z+");
+                        },
                         height: 55,
                         child: Icon(
                           Icons.arrow_upward_outlined,
@@ -343,7 +358,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                 right: (60 / 821.82) * MediaQuery.of(context).size.height,
                 child: Container(
                     child: RaisedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          movement.sink.add('{"Degree" : 0, "Distance" : 0}');
+                        },
                         child: Text(
                           "Stop",
                           style: TextStyle(
@@ -358,7 +375,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                 right: (180 / 821.82) * MediaQuery.of(context).size.height,
                 child: Container(
                     child: RaisedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("g");
+                        },
                         child: Text(
                           "Grip",
                           style: TextStyle(
@@ -381,7 +400,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                     curveType: CurveType.none,
                     child: Center(
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("a-");
+                        },
                         height: 55,
                         child: Icon(
                           Icons.arrow_downward_rounded,
@@ -406,7 +427,9 @@ class _Robot_Arm extends State<Robot_Arm> {
                     curveType: CurveType.none,
                     child: Center(
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          robotic_arm.sink.add("a+");
+                        },
                         height: 55,
                         child: Icon(
                           Icons.arrow_upward_outlined,
