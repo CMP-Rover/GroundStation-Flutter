@@ -5,6 +5,8 @@ import 'package:cmp_rover/pages/sensorreadings.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class SensorDetail extends StatelessWidget {
+  final  url;
+  SensorDetail({this.url});
   @override
   Widget build(BuildContext context) {
     return Circular_arc();

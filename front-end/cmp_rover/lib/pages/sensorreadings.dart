@@ -1,5 +1,6 @@
 
 import 'package:clay_containers/clay_containers.dart';
+import 'package:cmp_rover/pages/sensordetails.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
@@ -183,17 +184,17 @@ class SensorReadingContainer extends StatelessWidget {
                   children: [
                     Expanded(child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Image(image:(sensorId==0)? AssetImage('assets/bmp.png'):(sensorId==1)? AssetImage('assets/dht.png')
+                      child: Image(image:(sensorId==0)? AssetImage('assets/dht.png'):(sensorId==1)? AssetImage('assets/dht.png')
                           :(sensorId==2)? AssetImage('assets/mq2.png'):AssetImage('assets/mq7.png')),
                     )),
                     Expanded(child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text((sensorId==0)?'BMP':(sensorId==1)?'DHT':(sensorId==2)?'MQ2':'MQ7',
+                        Text((sensorId==0)?'DHT HUMIDITY':(sensorId==1)?'DHT TEMP':(sensorId==2)?'MQ2':'MQ7',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontStyle: FontStyle.italic,
-                            fontSize: 40,
+                            fontSize: 20,
                             color: Colors.white,
                             fontFamily:'Raleway',),textAlign: TextAlign.center, ),
                         SizedBox(height: 10,),
@@ -203,7 +204,7 @@ class SensorReadingContainer extends StatelessWidget {
                               return Text((snapshot.data == null)
                                   ? 'reading'
                                   :(snapshot.data == 'Connected Successfully')? '':' Reading = ${snapshot.data}',
-                                  style: TextStyle(fontSize: 28, color: Colors.white70,fontWeight: FontWeight.bold,),textAlign: TextAlign.center );
+                                  style: TextStyle(fontSize: 19, color: Colors.white70,fontWeight: FontWeight.bold,),textAlign: TextAlign.center );
                             }),
                       ],
                     )),
@@ -223,7 +224,8 @@ class SensorReadingContainer extends StatelessWidget {
                             child: Center(
                               child: FlatButton(
                                 onPressed: (){
-                                  Navigator.pushNamed(context, '/sensordetails');
+                                  //Navigator.pushNamed(context, '/sensordetails');
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>SensorDetail(url:(sensorId==0)?bmpChannel:(sensorId==1)?dhtChannel:(sensorId==2)?mq2Channel:mq7Channel)));
                                 },
                                 height: 50,
 
